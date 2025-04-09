@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, LogIn } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,13 @@ const Navbar = () => {
             <Button variant="ghost" asChild>
               <Link to="/team">Team</Link>
             </Button>
-            <Button variant="default" className="bg-brand-purple hover:bg-brand-darkPurple" asChild>
+            <Button variant="ghost" className="flex items-center" asChild>
+              <Link to="/login">
+                <LogIn className="mr-2 h-4 w-4" />
+                Login
+              </Link>
+            </Button>
+            <Button variant="default" className="bg-gradient-to-r from-brand-purple to-brand-blue hover:from-brand-darkPurple hover:to-brand-blue" asChild>
               <Link to="/demo">Try Demo</Link>
             </Button>
           </div>
@@ -54,7 +60,13 @@ const Navbar = () => {
             <Button variant="ghost" className="w-full justify-start" asChild>
               <Link to="/team">Team</Link>
             </Button>
-            <Button variant="default" className="w-full bg-brand-purple hover:bg-brand-darkPurple" asChild>
+            <Button variant="ghost" className="w-full justify-start" asChild>
+              <Link to="/login">
+                <LogIn className="mr-2 h-4 w-4" />
+                Login
+              </Link>
+            </Button>
+            <Button variant="default" className="w-full bg-gradient-to-r from-brand-purple to-brand-blue hover:from-brand-darkPurple hover:to-brand-blue" asChild>
               <Link to="/demo">Try Demo</Link>
             </Button>
           </div>
