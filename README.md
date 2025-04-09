@@ -3,7 +3,7 @@
 
 ## Project info
 
-**URL**: https://peerlink.dev/projects/3be5d999-c57f-4e4a-a249-7836e3b646e9
+**URL**: https://preview--peerlink-synergy.lovable.app/
 
 ## How can I edit this code?
 
